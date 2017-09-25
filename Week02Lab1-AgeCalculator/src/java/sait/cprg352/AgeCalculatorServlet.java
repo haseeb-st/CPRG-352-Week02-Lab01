@@ -23,6 +23,7 @@ public class AgeCalculatorServlet extends HttpServlet
     {
         String age = (request.getParameter("ageBox"));
         request.setAttribute("ageBox", age);
+        
         if(age == null)
         {
             getServletContext().getRequestDispatcher("/WEB-INF/ageCalculator.jsp").forward(request, response);
